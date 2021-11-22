@@ -2,6 +2,8 @@
 
 namespace News\App\Providers;
 
+use Anik\Form\FormRequestServiceProvider;
+use Flipbox\LumenGenerator\LumenGeneratorServiceProvider;
 use Illuminate\Support\ServiceProvider;
 
 class NewsSdkServiceProvider extends ServiceProvider
@@ -9,8 +11,8 @@ class NewsSdkServiceProvider extends ServiceProvider
     public function register()
     {
         // Register Providers
-        $this->app->register(Flipbox\LumenGenerator\LumenGeneratorServiceProvider::class);
-        $this->app->register(\Anik\Form\FormRequestServiceProvider::class);
+        $this->app->register(LumenGeneratorServiceProvider::class);
+        $this->app->register(FormRequestServiceProvider::class);
 
         // Register Commands
         if($this->app->runningInConsole()) {
