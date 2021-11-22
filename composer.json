@@ -7,7 +7,7 @@
     "require": {
         "anik/form-request": "^4.2",
         "flipbox/lumen-generator": "^7.0.2",
-        "laravelista/lumen-vendor-publish": "^8.0"
+        "laravelista/lumen-vendor-publish": "^7.0"
     },
     "authors": [
         {
