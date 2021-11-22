@@ -1,0 +1,30 @@
+{
+    "name": "foruzan/ms-sdk",
+    "description": "Microservice SDK for foruzan lumen projects",
+    "keywords": [],
+    "license": "MIT",
+    "type": "library",
+    "require": {
+        "anik/form-request": "^4.2",
+        "flipbox/lumen-generator": "^8.2",
+        "laravelista/lumen-vendor-publish": "^8.0"
+    },
+    "authors": [
+        {
+            "name": "Foruzan Amiri",
+            "email": "foruzanAmiriDavani@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "News\\App\\": "app/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "News\\App\\Providers\\NewsSdkServiceProvider"
+            ]
+        }
+    }
+}
